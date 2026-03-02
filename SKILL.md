@@ -16,7 +16,7 @@ description: 抓取微信公众号文章并转换为 Markdown 格式，使用 Ca
 
 ## 前置条件
 
-- Python 3.10+ 已安装
+- Python 3.8+ 已安装
 - 依赖已安装 (`pip install -r requirements.txt`)
 - Camoufox 浏览器已下载 (`python -m camoufox fetch`)
 

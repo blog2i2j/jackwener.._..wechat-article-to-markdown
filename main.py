@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 """
 WeChat Article to Markdown — 微信公众号文章抓取 & Markdown 转换工具
 
