@@ -62,17 +62,17 @@ output/
 
 ### Claude Code / Antigravity
 
-全局安装后自动可用。在 Claude Code 中直接使用：
-
 ```bash
-# 安装（一次即可）
+# 1. 全局安装工具
 npm install -g wechat-article-to-markdown
 
-# 在对话中直接让 AI 调用
-wechat-to-md "https://mp.weixin.qq.com/s/xxxxxxxx"
+# 2. 安装 skill 到全局目录（让 Claude Code 自动发现）
+mkdir -p ~/.agents/skills/wechat-article-to-markdown
+curl -o ~/.agents/skills/wechat-article-to-markdown/SKILL.md \
+  https://raw.githubusercontent.com/jackwener/wechat-article-to-markdown/main/SKILL.md
 ```
 
-你可以用自然语言下达任务：
+安装后 Claude Code / Antigravity 会自动发现并使用 `wechat-to-md` 命令。你可以用自然语言下达任务：
 - "把这篇微信文章转成 Markdown 保存下来"
 - "抓取这个公众号文章，提取正文用于知识库"
 
