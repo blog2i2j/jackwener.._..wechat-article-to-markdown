@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "微信公众号文章抓取 & Markdown 转换工具 (cheerio + axios + turndown)",
   "main": "index.js",
+  "bin": {
+    "wechat-to-md": "index.js"
+  },
   "scripts": {
     "start": "node index.js",
     "fetch": "node index.js"

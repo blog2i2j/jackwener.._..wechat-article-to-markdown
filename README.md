@@ -14,13 +14,26 @@
 - 📅 **元数据保留** — 标题、公众号名称、发布时间、原文链接
 - 🧹 **格式清理** — 去除 `&nbsp;`、多余空行、行尾空格
 
+## 安装
+
+```bash
+# 全局安装
+npm install -g wechat-article-to-markdown
+
+# 或使用 npx 直接运行（无需安装）
+npx wechat-article-to-markdown "https://mp.weixin.qq.com/s/xxxxxxxx"
+```
+
 ## 快速开始
 
 ```bash
-# 安装依赖
-npm install
+# 全局安装后
+wechat-to-md "https://mp.weixin.qq.com/s/xxxxxxxx"
 
-# 抓取文章
+# 或从源码运行
+git clone git@github.com:jackwener/wechat-article-to-markdown.git
+cd wechat-article-to-markdown
+npm install
 node index.js "https://mp.weixin.qq.com/s/xxxxxxxx"
 ```
 
