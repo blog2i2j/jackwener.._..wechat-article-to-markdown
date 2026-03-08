@@ -17,10 +17,11 @@ Use this skill when you need to save WeChat articles as Markdown for:
 ## Prerequisites
 
 - Python 3.8+
-- `uv` installed (recommended), or install from PyPI:
 
 ```bash
-pipx install wechat-article-to-markdown
+# Install
+uv tool install wechat-article-to-markdown
+# Or: pipx install wechat-article-to-markdown
 ```
 
 ## Install into Claude Code user directory
