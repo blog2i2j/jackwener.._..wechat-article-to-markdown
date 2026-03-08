@@ -15,11 +15,11 @@ Fetch WeChat Official Account articles and convert them to clean Markdown.
 ## Installation
 
 ```bash
-# Recommended: pipx
-pipx install wechat-article-to-markdown
-
-# Or: uv tool
+# Recommended: uv tool (fast, isolated)
 uv tool install wechat-article-to-markdown
+
+# Or: pipx
+pipx install wechat-article-to-markdown
 ```
 
 Or from source:
@@ -127,11 +127,11 @@ If not set, workflow falls back to `https://mp.weixin.qq.com/s/Y7dyRC7CJ09miHWU6
 ## 安装
 
 ```bash
-# 推荐：pipx
-pipx install wechat-article-to-markdown
-
-# 或者：uv tool
+# 推荐：uv tool
 uv tool install wechat-article-to-markdown
+
+# 或者：pipx
+pipx install wechat-article-to-markdown
 ```
 
 ## 使用示例
