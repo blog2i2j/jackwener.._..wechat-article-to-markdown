@@ -73,17 +73,24 @@ WECHAT_E2E_URLS="https://mp.weixin.qq.com/s/Y7dyRC7CJ09miHWU6LBzBA,https://mp.we
 
 This project ships with [`SKILL.md`](./SKILL.md), so AI agents can discover and use this tool workflow.
 
-### Claude Code / Antigravity
+### [Skills CLI](https://github.com/vercel-labs/skills) (Recommended)
 
 ```bash
-# Project-local skills directory
+npx skills add jackwener/wechat-article-to-markdown
+```
+
+| Flag | Description |
+| --- | --- |
+| `-g` | Install globally (user-level, shared across projects) |
+| `-a claude-code` | Target a specific agent |
+| `-y` | Non-interactive mode |
+
+### Manual Install
+
+```bash
 mkdir -p .agents/skills
 git clone git@github.com:jackwener/wechat-article-to-markdown.git \
   .agents/skills/wechat-article-to-markdown
-
-# Or copy SKILL.md only
-curl -o .agents/skills/wechat-article-to-markdown/SKILL.md \
-  https://raw.githubusercontent.com/jackwener/wechat-article-to-markdown/main/SKILL.md
 ```
 
 ```bash
@@ -144,15 +151,25 @@ wechat-article-to-markdown "https://mp.weixin.qq.com/s/xxxxxxxx"
 
 项目自带 [`SKILL.md`](./SKILL.md)，可供支持 `.agents/skills/` 约定的 Agent 自动发现。
 
-### Claude Code 用户目录示例
+### [Skills CLI](https://github.com/vercel-labs/skills)（推荐）
+
+```bash
+npx skills add jackwener/wechat-article-to-markdown
+```
+
+| 参数 | 说明 |
+| --- | --- |
+| `-g` | 全局安装（用户级别，跨项目共享） |
+| `-a claude-code` | 指定目标 Agent |
+| `-y` | 非交互模式 |
+
+### 手动安装
 
 ```bash
 mkdir -p ~/.claude/skills/wechat-article-to-markdown
 curl -o ~/.claude/skills/wechat-article-to-markdown/SKILL.md \
   https://raw.githubusercontent.com/jackwener/wechat-article-to-markdown/main/SKILL.md
 ```
-
-添加后重启 Claude Code 以重新加载 skills。
 
 ### OpenClaw / ClawHub
 
